@@ -1,0 +1,102 @@
+.table-component {
+  display: flex;
+  justify-content: center;
+}
+
+.table-component .wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #3c3c3c;
+  border-radius: 16px;
+  padding: 16px;
+  min-width: 400px;
+}
+.sort-wrapper {
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.sort-wrapper .sort-text {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.sort-wrapper .label {
+  padding: 10px 24px;
+  background-color: #000;
+  position: relative;
+}
+.sort-wrapper > .label ~ .label {
+  background-color: #504e4e;
+}
+
+.sort-wrapper .label:nth-of-type(2)::after {
+  display: block;
+  content: " ";
+  background-color: #dc8709;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.table-headers,
+.table-row {
+  display: flex;
+  align-items: center;
+}
+.table-wrapper {
+  background-color: #fff;
+}
+.table-headers label,
+.table-row label {
+  flex: 1 1 0;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  color: #000;
+  font-weight: 700;
+}
+.table-headers label:last-child,
+.table-row label:last-child {
+  justify-content: flex-end;
+}
+.table-headers label:first-child {
+  background-color: #b1adad;
+}
+.table-row {
+  border-top: 1px solid #dad4d4;
+}
+.table-row label {
+  font-weight: 500;
+}
+.table-row .account {
+  color: #06a4e2;
+}
+.table-row .account,
+.table-row .balance {
+  font-weight: 700;
+}
+.balance {
+  flex-direction: column;
+}
+.amount {
+  width: 100%;
+  text-align: right;
+}
+.increase {
+  font-size: 11px;
+  font-weight: 500;
+  color: green;
+  width: 100%;
+  text-align: right;
+}
+.decrease {
+  font-size: 11px;
+  font-weight: 500;
+  color: red;
+  width: 100%;
+  text-align: right;
+}
